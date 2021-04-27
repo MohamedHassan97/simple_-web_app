@@ -50,7 +50,8 @@ description: string, optional, max length of 200 characters.
 // To respond to http get request
 app.get('/'/* path or url '/' represrnts route of the website*/, /* callback function */(req, res) => {
     // This req object has a bunch of useful propereties u can refrence documentation for more info
-    res.send('Hello World');
+    res.sendFile(__dirname + '/form.html')
+  //  res.send('Hello World');
 });
 
 // to get all courses
